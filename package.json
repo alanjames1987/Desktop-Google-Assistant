@@ -1,0 +1,25 @@
+{
+  "name": "desktop-assistant",
+  "version": "0.0.1",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "rebuild": "./node_modules/.bin/electron-rebuild",
+    "electron": "./node_modules/.bin/electron .",
+    "package": "./node_modules/.bin/electron-packager ./ DesktopAssistant --all --out ~/DesktopAssistant --version 0.0.1 --overwrite --icon=./assistant.icns"
+  },
+  "dependencies": {
+    "buffer-to-uint8array": "1.1.0",
+    "dialogs": "1.1.20",
+    "electron": "1.3.1",
+    "google-assistant": "git+ssh://git@github.com:alanjames1987/google-assistant.git",
+    "jquery": "3.2.1",
+    "node-record-lpcm16": "0.3.0",
+    "speaker": "0.3.0",
+    "vue": "2.4.2"
+  },
+  "devDependencies": {
+    "electron-packager": "9.0.0",
+    "electron-rebuild": "1.6.0"
+  }
+}
